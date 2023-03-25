@@ -21,10 +21,11 @@
 * commit
 * git reset HEAD <file> : stage된 파일을 unstaged로 변경
 * git checkout -- <file> : stage되어 있는 파일을 수정한 후 수정 전으로 되돌림 
-* branch
-* merge
-* status
-* log
+* branch : 여러 개발자들이 동시에 다양한 작업을 할 수 있도록 만든 기능으로, 각자 독립적인 저장소 안에서 소스코드를 변경하며 작업을 진행할 수 있음. 이렇게 분리된 작업 영역에서 변경되어 만들어진 브랜치는 다른 브랜치와 병합함으로써, 작업한 내용을 다시 새로운 하나의 브랜치를 만들 수 있음. 
+    * 예) git branch : 브랜치 보기, git checkout -b testing: testing 브랜치 만들고 이동
+* merge : merge는 분기했던 브랜치를 master브랜치와 합칠 때 사용
+* status : 
+* log : commit했던 로그 기록을 보여줄 때 사용
     * 예) git log --oneline --decorate --graph --all
 
 ------
@@ -75,9 +76,13 @@ tail -n 1 $file_path
   * 녹색
     * 파랑
 
+
 ### 강조
 *single asterisks*    
 _single underscores_    
 **double asterisks**    
 __double underscores__    
 ~~cancelline~~ 
+
+### 링크
+
