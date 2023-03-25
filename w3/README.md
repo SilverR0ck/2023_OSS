@@ -57,43 +57,6 @@ echo $file_path
 echo
 
 line_num=`wc -l $file_path | cut -c 1 -`
-사용법: git config [<옵션>]
-
-설정 파일 위치
-    --global              공통 설정 파일을 사용합니다
-    --system              시스템 설정 파일을 사용합니다
-    --local               저장소 설정 파일을 사용합니다
-    -f, --file <파일>     지정한 설정 파일을 사용합니다
-    --blob <블롭-id>      지정한 블롭 오브젝트에서 설정을 읽습니다
-
-동작
-    --get                 값을 가져옵니다: <이름> [<값-정규식>]
-    --get-all             모든 값을 가져옵니다: <키> [<값-정규식>]
-    --get-regexp          정규식에 대한 값을 가져옵니다: <이름-정규식> [<값-정규식>]
-    --get-urlmatch        <URL>에 특정되는 값을 가져옵니다: <섹션>[.<변수>] <URL>
-    --replace-all         해당하는 변수를 모두 제거합니다: <이름> <값> [<값-정규식>]
-    --add                 새 변수를 추가합니다: <이름> <값>
-    --unset               변수를 제거합니다: <이름> [<값-정규식>]
-    --unset-all           해당하는 항목을 모두 제거합니다: <이름> [<값-정규 식>]
-    --rename-section      섹션의 이름을 바꿉니다: <옛-이름> <새-이름>
-    --remove-section      섹션을 제거합니다: <이름>
-    -l, --list            전체 목록을 표시합니다
-    -e, --edit            편집기를 엽니다
-    --get-color           설정한 색을 찾습니다: slot [<기본값>]
-    --get-colorbool       색 설정을 찾습니다: slot [<표준출력이-TTY인지-여부>]
-
-값 종류
-    --bool                값이 "true" 또는 "false"입니다
-    --int                 값이 십진수입니다
-    --bool-or-int         값이 --bool 또는 --int입니다
-    --path                값이 경로(파일 또는 디렉터리 이름)입니다
-    --expiry-date         값이 만료 시각입니다
-
-기타
-    -z, --null            값을 NUL 바이트로 끝냅니다
-    --name-only           변수 이름만 표시합니다
-    --includes            찾아볼 때 include 지시어를 고려합니다
-    --show-origin         설정의 출처를 표시합니다 (파일, 표준 입력, 블롭,  명령행)
 echo "----------"
 echo "line number :"
 echo $line_num
@@ -104,6 +67,7 @@ echo "lask line :"
 tail -n 1 $file_path
 ```
 
+------
 ## 마크다운
 ### 목록
 #### 번호 있는 목록 : 내림차순 정렬
@@ -147,7 +111,7 @@ __double underscores__
 
 
 ### 이미지
-* 이미지 삽입 : `![이미지 이름](이미지 주소)`
+* 이미지 삽입 : `![이미지 이름](이미지 주소)`    
     *예) !(markdown_logo)(https://raw.github.com/dcurtis/markdown-mark/master/png/208x128.png)
 
 
